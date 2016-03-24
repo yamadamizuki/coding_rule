@@ -86,7 +86,7 @@
 
 - [GITHUB](http://primercss.io/scaffolding/ "GITHUB")
 
-- [誰かのルール](https://gist.github.com/hrfmmymt/ec97be24892b095208ef "コーディングルール") 
+- [hrfmmymtさんのルール](https://gist.github.com/hrfmmymt/ec97be24892b095208ef "コーディングルール") 
 
 
 
