@@ -114,6 +114,9 @@
 	<a href="recommendations/">All recommendations</a>
 	```
 
+	例
+	[HTML5タグの意味](http://webcre8.jp/investigate/html5-all-tags.html)
+
 ###マルチメディアの代替コンテンツ
 	マルチメディアの要素には、代替コンテンツを提供する。
 	画像には、意味のある代替テキストをalt属性として、動画・オーディオコンテンツにはキャプションを記述する。
