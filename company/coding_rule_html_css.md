@@ -304,11 +304,11 @@
 	|_ import.css.sass ... import用css 標準でimportしておくファイル
 	|_ valiables.css.sass ... 変数や関数、mixin等で使用するsassを格納するファイル
 	|_ app
-	|_common.css.sass ... 共通の項目で使用するファイル
-	|_header.css.sass ... headerを使用するファイル
-	|_footer.css.sass ... footerのスタイルを使用するファイル
-	|_module.css.sass ... パーツとして複数回使用する等を重点においたclassを記載するファイル
-	|_○○○.css.sass ... 各テーマに合わせてネームして使用して下さい。
+			|_common.css.sass ... 共通の項目で使用するファイル
+			|_header.css.sass ... headerを使用するファイル
+			|_footer.css.sass ... footerのスタイルを使用するファイル
+			|_module.css.sass ... パーツとして複数回使用する等を重点においたclassを記載するファイル
+			|_○○○.css.sass ... 各テーマに合わせてネームして使用して下さい。
 
 	※ commonとmoduleの違い ...
 	汎用的に使用する a タグや、h1 などの見出し要素、その他、汎用的なクラスのCSSをcommon、パーツとして再利用できるCSSをmoduleへ
@@ -320,7 +320,7 @@
 	HTML同様[W3C CSS validator](http://jigsaw.w3.org/css-validator/)などのツールで検証する。
 
 ###idは使用しない
-	idにスタイルは極力使用しない。classにスタイルを付与すること
+	Jsに関連したidにスタイルは極力使用しない。classにスタイルを付与すること
 
 ###classの命名
 	class名にはちゃんと意味の分かる名前を使うこと。
