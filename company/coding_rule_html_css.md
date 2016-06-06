@@ -87,7 +87,8 @@
 ###HTMLのバリデート
 	可能な限り適切なHTMLを記述すること。
 	そうでないとパフォーマンスが低下するような場合でない限りは、ちゃんと書く。
-	[「W3C HTML validator」](http://validator.w3.org/nu/)などの検証ツールを使用する。
+	w3等の検証ツールを使用する。
+> [「W3C HTML validator」](http://validator.w3.org/nu/)
 
 	```html
 	<!-- NG -->
@@ -307,15 +308,37 @@
 	|_ import.css.sass ... import用css 標準でimportしておくファイル
 	|_ valiables.css.sass ... 変数や関数、mixin等で使用するsassを格納するファイル
 	|_ app
-			|_common.css.sass ... 共通の項目で使用するファイル
-			|_header.css.sass ... headerを使用するファイル
-			|_footer.css.sass ... footerのスタイルを使用するファイル
-			|_module.css.sass ... パーツとして複数回使用する等を重点においたclassを記載するファイル
-			|_○○○.css.sass ... 各テーマに合わせてネームして使用して下さい。
+		|_common.css.sass ... 共通の項目で使用するファイル
+		|_header.css.sass ... headerを使用するファイル
+		|_footer.css.sass ... footerのスタイルを使用するファイル
+		|_module.css.sass ... パーツとして複数回使用する等を重点においたclassを記載するファイル
+		|_custom_bootstrap.css.sass (bootstrap_custom.css.sass)... bootstrapを上書きに使用するファイル
+		|_○○○.css.sass ... 各テーマに合わせてネームして使用して下さい。
 
 	※ commonとmoduleの違い ...
 	汎用的に使用する a タグや、h1 などの見出し要素、その他、汎用的なクラスのCSSをcommon、パーツとして再利用できるCSSをmoduleへ
 	記載する
+
+##モバイルファースト
+	メディアクエリを利用する際に@media (max-width: ●●)は推奨しません。
+	基本的な記述に@media (min-width: ●●)を使用して下さい。記述量が減り、視認性が向上します。
+	やむを得ない場合は使用しましょう。
+
+	また@media （min-width）は優先順位がありますので「小さい→大きい」で書きましょう。
+	例）
+	```
+		@media screen and (min-width:$screen-sm)
+
+			/* for iPhone Landscape　(iPhone 横) */
+
+		@media screen and (min-width:$screen-md)
+
+			/*　for iPad 　*/
+
+		@media screen and (min-width:$screen-lg)
+
+
+	```
 
 ###CSSのバリデート
 	可能な限り適切なCSSを記述すること。
