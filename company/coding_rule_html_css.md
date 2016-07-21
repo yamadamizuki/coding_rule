@@ -305,8 +305,8 @@
 	下記を基盤として作成をお願い致します
 
 	CSS
-	|_ import.css.sass ... import用css 標準でimportしておくファイル
-	|_ valiables.css.sass ... 変数や関数、mixin等で使用するsassを格納するファイル
+	|_ import.css.sass ... import用css 標準でimportしておくファイル。またmixin等はコチラに記載する
+	|_ valiables.css.sass ... 変数や関数sassを格納するファイル
 	|_ app
 		|_common.css.sass ... 共通の項目で使用するファイル
 		|_header.css.sass ... headerを使用するファイル
