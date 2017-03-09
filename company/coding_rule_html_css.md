@@ -527,4 +527,22 @@
 	}
 	```
 
-	---
+---
+
+## 追加項目
+
+###classの定義する際の注意点について
+	クラス名の接頭部分と、それが定義している命名を一致させる
+	理由：用途を分かりやすくなるようにするため
+	```OK
+	#header
+		header-logo
+		header-nav
+	```
+	```NG
+	#header
+		logo-header
+		head-inner
+		header-nav
+	```
+---
