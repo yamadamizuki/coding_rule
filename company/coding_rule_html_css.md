@@ -263,38 +263,26 @@
 		</tbody>
 	</table>
 	```
+---
 
-###全般的な書式
-	ブロック要素・リスト要素・テーブル要素は改行してから記述し、それらの子要素にはインデントを入れる。
-	横並びリストなど改行による空白が問題になる場合は、li要素をすべて一行で書いてもOK。
+##追加項目
 
-	```html
-	<blockquote>
-		<p><em>Space</em>, the final frontier.</p>
-	</blockquote>
+###コメント	
+	独自コードや解釈しづらいものはコメントを入れて用途を説明するようにする。
 
-	<ul>
-		<li>Moe</li>
-		<li>Larry</li>
-		<li>Curly</li>
-	</ul>
+###RUBYの宣言
 
-	<table>
-		<thead>
-			<tr>
-				<th scope="col">Income</th>
-				<th scope="col">Taxes</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>$ 5.00</td>
-				<td>$ 4.50</td>
-			</tr>
-		</tbody>
-	</table>
-	```
+	`<% render_cell :contents, :list %>`
+	両端にスペースをいれて、統一する
 
+###RUBYの記法
+	:●●　=> ではなく ●●:にするようにする。
+
+###IDやCLASSの命名ルールについて
+	JSを使用する場合：
+		class: js-をつける。		
+		id: キャメルケースでかく。
+	
 ---
 
 ##CSSスタイルルール
