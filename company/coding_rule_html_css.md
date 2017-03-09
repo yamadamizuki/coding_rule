@@ -282,6 +282,10 @@
 	JSを使用する場合：
 		class: js-をつける。		
 		id: キャメルケースでかく。
+	```例
+	class: js-attachment、js-slider-arrow
+	id: topBanner、	mainVis
+	```
 	
 ---
 
